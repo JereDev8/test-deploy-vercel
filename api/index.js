@@ -5,7 +5,7 @@ dotenv.config();
 
 const app = express();
 
-app.get("/", (req, res) => res.send("Hola " + process.NOMBRE_USUARIO +"!"));
+app.get("/", (req, res) => res.send("Hola " + NOMBRE_USUARIO +"!"));
 
 app.post("/users", (req, res)=>{
     res.send('POST de users ejecutado exitosamente!');
